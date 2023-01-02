@@ -1,7 +1,7 @@
 # Django_Study
 
 목차  
-- [1.Django 다운로드](./Download Django.md)     
+- [1. Django 다운로드](./DownloadDjango.md)    
 
 
 
