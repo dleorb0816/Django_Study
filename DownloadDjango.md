@@ -14,4 +14,15 @@
                     -> 가상 디렉토리 생성 -> virtualenv mywebsite
 - mywebsite 디렉토리로 이동 후 -> scripts 디렉토리 -> activate.bat 실행 -> 가상환경 안에서 -> pip install Django
 
-## Django 설치후 
+## Django 설치후 버전확인
+
+1. 본인 PC에 설치된 파이썬 버전 확인
+- CMD 명령 프롬프트에서 C:>python 입력하고 버전 확인.
+2. 본인 PC에 설치된 장고 프레임워크 버전 확인
+```python
+import django
+print(django.get_version()) # 장고 임포트 후 장고 프레임워크 버전 확인.
+C:₩users₩userid₩python -m django --version
+
+가상환경을 빠져나오는 방법 -> deactivate
+```
