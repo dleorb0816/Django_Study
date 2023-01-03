@@ -35,16 +35,37 @@ C:₩users₩userid₩python -m django --version
 
 2. 윈도우에서 장고 프레임워크 삭제
  구축한 가상환경 디렉토리를 서브 디렉토리까지 모두 지우는 도스 명령어 옵션을 줘서 삭제해주면 된다.  
-    -> c:₩>md 디렉토리명
-    -> c:₩>rd 디렉토리명
-    -> /s 옵션  : 서브 디렉토리까지 삭제. 이 옵션을 사용하면 서브 디렉토리까지 삭제할 것인지 물음.
-    -> /q 옵션  : 삭제여부를 묻지않고 삭제.(5분 50초부터 들으면 됨)
+    -> c:₩>md 디렉토리명  
+    -> c:₩>rd 디렉토리명  
+    -> /s 옵션  : 서브 디렉토리까지 삭제. 이 옵션을 사용하면 서브 디렉토리까지 삭제할 것인지 물음.  
+    -> /q 옵션  : 삭제여부를 묻지않고 삭제.(5분 50초부터 들으면 됨)  
     
 ## Django 특정버전 지정 설치
 
 1. Pip 프로그램을 이용한 장고 프레임 워크 특정 버전 설치
-    -> pip install Django==3.2.9
-    -> pip uninstall Django (삭제시 장고 버전을 따로 지정하지 않아도 됨)
+    -> pip install Django==3.2.9  
+    -> pip uninstall Django (삭제시 장고 버전을 따로 지정하지 않아도 됨)  
     
 
+## Django 학습환경 구축 실습
 
+1. 실습 디렉토리 생성  
+    - c:\>Django
+    - md,rd, /s, /q 옵션들 사용  
+2. 파이썬 설치 버전 확인 후 --> 가상환경 구축 --> venv모듈 사용 --> myenvironment 이름으로 생성 --> 폴더 100여개, 파일 900여개  
+    - python
+    - python - m venv 가상환경이름(myenvironment)
+3. 가상환경 디렉토리(myenvironment)로 진입 후 --> 활성화 작업(activate.bat)
+    - c:\ > Django > myenvironment > Scripts > activate.bat(가상환경 모드로 진입)
+    
+    * 가상환경 모드로 진입한 화면
+    ```
+    ( myenvironment ) c:\>.................
+    ```
+4. 장고 설치
+    - pip install Django 또는 pip install Django==3.2.9
+    - pip uninstall Django
+5. 장고 버전 확인
+    - import django
+    - print( django.get_version() )
+    - python -m django --version => 명령 프롬프트에서 실행할 경우
