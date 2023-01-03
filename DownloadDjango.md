@@ -39,3 +39,12 @@ C:₩users₩userid₩python -m django --version
     -> c:₩>rd 디렉토리명
     -> /s 옵션  : 서브 디렉토리까지 삭제. 이 옵션을 사용하면 서브 디렉토리까지 삭제할 것인지 물음.
     -> /q 옵션  : 삭제여부를 묻지않고 삭제.(5분 50초부터 들으면 됨)
+    
+## Django 특정버전 지정 설치
+
+1. Pip 프로그램을 이용한 장고 프레임 워크 특정 버전 설치
+    -> pip install Django==3.2.9
+    -> pip uninstall Django (삭제시 장고 버전을 따로 지정하지 않아도 됨)
+    
+
+
