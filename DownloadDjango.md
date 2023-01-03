@@ -54,7 +54,7 @@ C:₩users₩userid₩python -m django --version
     - md,rd, /s, /q 옵션들 사용  
 2. 파이썬 설치 버전 확인 후 --> 가상환경 구축 --> venv모듈 사용 --> myenvironment 이름으로 생성 --> 폴더 100여개, 파일 900여개  
     - python
-    - python - m venv 가상환경이름(myenvironment)
+    - python - m venv 가상환경이름(myenvironment) [주로 다른 웹사이트를 만들때는 또 다른 가상환경을 만든다.]
 3. 가상환경 디렉토리(myenvironment)로 진입 후 --> 활성화 작업(activate.bat)
     - c:\ > Django > myenvironment > Scripts > activate.bat(가상환경 모드로 진입)
     
@@ -69,3 +69,11 @@ C:₩users₩userid₩python -m django --version
     - import django
     - print( django.get_version() )
     - python -m django --version => 명령 프롬프트에서 실행할 경우
+
+## 웹사이트 띄우기 
+
+1. 프로젝트 생성 --> mywebsite or mysite or myporject  
+  1-1. 제일먼저 가상환경 모드로 진입 --> myenvironment --> Scripts --> activate.bat 활성화  
+  1-2. 만약 가상환경 모드로 진입하지 않고 뭔가를 하려고 하면(버전확인) --> X  
+2. C:\zdragon> --> 실픕 폴더 루트로 이동해서 --> 프로젝트 생성
+  2-1. django-admin startproject myproject(프로젝트 이름)
