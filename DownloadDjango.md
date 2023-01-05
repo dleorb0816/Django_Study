@@ -75,5 +75,24 @@ C:₩users₩userid₩python -m django --version
 1. 프로젝트 생성 --> mywebsite or mysite or myporject  
   1-1. 제일먼저 가상환경 모드로 진입 --> myenvironment --> Scripts --> activate.bat 활성화  
   1-2. 만약 가상환경 모드로 진입하지 않고 뭔가를 하려고 하면(버전확인) --> X  
-2. C:\zdragon> --> 실픕 폴더 루트로 이동해서 --> 프로젝트 생성
-  2-1. django-admin startproject myproject(프로젝트 이름)
+2. C:\zdragon> --> 실픕 폴더 루트로 이동해서 --> 프로젝트 생성  
+  2-1. django-admin startproject myproject(프로젝트 이름) --> 프로젝트 폴더 및 관련 파일들이 자동 생성  
+  2-2. 프로젝트 생성 후 생성되는 폴더 및 파일들 --> c:\zdragon>하위에 생성  
+        myenvironment  
+        myproject  
+            manage.py(가장 자주 사용하는 파일중 하나. 서버 구동 등등...)  
+            myproject  
+                    - settings.py   (프로젝트내 환경 구성 등 여러 설정 정보를 담고 있다)  
+                    - urls.py       (URL 패턴 등 path관련 여러 정보를 담고 있음)  
+                                    (일단 위 2개가 중요한 파일 --> 자주 사용되는 파일)  
+3. 서버 구동 --> c:\zdragon\myrpoject> --> manage.py 파일 있는데서 실행  
+   3-1. python manage.py runserver(기본 8000번 포트로 서버 구동)  
+   3-2. python manage.py runserver 9090(포트변경)  
+   3-3. py 명령어로도 가능 --> py manage.py manage.py  
+   3-4. 서버종료 --> CTRL + C  
+4. 구동된 서버는 무엇?  
+    4-1. 장고 개발 서버로써 경량의 웹서버.  
+    4-2. 주로 개발 목적 및 테스트 용도로 사용되는 서버.  
+    4-3. 실무에서는 엔진엑스나 아파치와 같은 웹서버를 사용.  
+    4-4. 
+    
