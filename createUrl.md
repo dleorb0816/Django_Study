@@ -9,3 +9,9 @@
 - 잘못된 코드로 오류가 나면 서버 구동이 자동적으로 감지하고 에러를 낸다. 수정되면 다시 재구동을 한다.  
 
 - 초기화면 views.index 또는 views.main등으로 해도 된다.
+
+- request 객체는 사용자가 폼 페이지를 통해서 이력한 폼 데이터 값들을 받는다.  
+
+- request.GET, request.POST, request.COOKIE --> 사전형 데이터 get,post, cookie 정보들을 받는다.  
+
+- 
